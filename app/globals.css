@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-light: #ffffff;
+  --color-text-light: #000000;
+  --color-bg-dark: #1a202c;
+  --color-text-dark: #f7fafc;
+}
+
+html.light {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+html.dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+
+body {
+  @apply transition-colors duration-200;
+}
